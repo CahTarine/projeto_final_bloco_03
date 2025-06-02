@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import logo from '../../assets/img/logo/logoCT.png'
 function Home() {
   return (
@@ -10,12 +11,11 @@ function Home() {
 
 
           
-
-          <div className='container flex justify-center py-4 ml-4'>
+        <Link to='/categorias' 
+        className='container flex justify-center py-4 ml-4'>
             <button className="border-4 rounded-3xl bg-indigo-400 flex justify-center
-                                   hover:bg-red-800 text-white w-1/2 py-2">Categorias</button>
-          </div>
-
+                                   hover:bg-red-800 text-white w-1/2 py-2 cursor-pointer">Categorias</button>
+        </Link>
         
           
       </div>
